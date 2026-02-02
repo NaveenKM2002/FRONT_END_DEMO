@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-color);
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  .demo-btn {
+    padding: 10px 16px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .demo-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 16px;
+      padding: 20px;
+    }
+  
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+  .nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+  }
+  
+  .nav a:hover::after {
+    width: 100%;
+  }
+  .nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+  }
+  
+  .nav a:hover::after {
+    width: 100%;
+  }
+  

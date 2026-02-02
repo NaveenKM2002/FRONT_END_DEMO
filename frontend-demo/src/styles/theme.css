@@ -1,0 +1,54 @@
+:root {
+    /* COLORS */
+    --bg: #ffffff;
+    --surface: #f9fafb;
+    --card: #ffffff;
+  
+    --primary: #4f46e5;
+    --accent: #22d3ee;
+  
+    --text-main: #111827;
+    --text-muted: #6b7280;
+  
+    --border: #e5e7eb;
+  }
+  
+  /* DARK MODE */
+  [data-theme="dark"] {
+    --bg: #0b0f19;
+    --surface: #121826;
+    --card: #0f172a;
+  
+    --primary: #6366f1;
+    --accent: #22d3ee;
+  
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+  
+    --border: #1f2937;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text-main);
+    font-family: "Inter", system-ui, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  h1 {
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
